@@ -2,41 +2,43 @@
 <html lang="en" ng-app="gemStore">
 <head>
 	<meta charset="UTF-8">
-	<title>Flatlanders Store</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title>flatlanderStore</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!--<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ab numquam placeat tempora maxime perspiciatis alias, incidunt quisquam repellat beatae quibusdam veniam nam deleniti amet recusandae earum dolore, voluptate possimus.</h1>
 
-	<!--<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-
-	<p> I am {{15 + 10}} </p>
-	<p> {{"Hello" + " Wolrd"}} </p>-->
+	<p> I am {{15 + 10}}</p>
+	<p>{{"Hello" + " World"}} </p>-->
 
 	<div class="container" ng-controller="StoreController as store">
 		<div class="list-group">
-			<div class="list-group-item" ng-repeat="product in store.products | orderBy: 'price'">
-				<h3>
-					{{product.name}}	
-					<em class="pull-right">{{product.price | currency}}</em>
-				</h3>
-					<img class="center-block" ng-src="{{product.images[0].url}}" alt="">
-					<p>{{product.description}}</p>
-				<!--<button ng-show="product.canPurchase">Add to Cart</button>-->
-				<section>
-					<ul class="nav nav-pills">
-						<li><a href="" ng-click="tab = 1">Description</a></li>
-						<li><a href="" ng-click="tab = 1">Specifications</a></li>
-						<li><a href="" ng-click="tab = 1">Reviews</a></li>
-					</ul>
-				</section>
+			<div class="list-group-item"  ng-repeat="product in store.products | orderBy: 'price'">
+				<h3 product-title></h3>
+				<img ng-src="{{product.images[0].url}}" class="center-block" alt="">
+				<!--<product-title></product-title>-->
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<a href="" class="thumbnail">
+							<img ng-repeat="image in product.images"
+							ng-src="{{image.url}}" class="
+							image-responsive">
+						</a>
+					</div>
+				</div>
+				<product-panels></product-panels>
+				<!--<button ng-show="!product.canPurchase">Add to Cart</button>-->
+				
 			</div>
+		
 		</div>
+		
 	</div>
 
-	<!--<script type="text/javascript" src="js/angular.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+	
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
