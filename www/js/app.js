@@ -1,13 +1,5 @@
 (function(){
 
-	var gem = {
-		name: 'Azurite',
-		price: '2.95',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsum, iusto voluptates laudantium quam et repellendus facilis tenetur quasi ea, doloremque veritatis velit in, laboriosam quibusdam vero incidunt ipsam voluptatum.',
-		canPurchase: false,
-		soldOut: true
-	};
-
 	var gems = [
 		{
 			name: 'Azurite',
@@ -93,14 +85,6 @@
 			this.current = imageNumber || 0;
 		}
 	})
-
-	/*app.directive('productTitle', function(){
-		return{
-			restrict: 'E',
-			templateUrl: 'product-title.html'
-		};
-	});
-*/
 
 
 })();
