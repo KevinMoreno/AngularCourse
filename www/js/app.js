@@ -13,8 +13,8 @@
 				{id:2, url:'img/gem-03.gif'}
 			],
 			reviews: [
-				{stars: 5, body: 'I love this product', author:'alonso@gmail.com'},
-				{stars: 5, body: 'I love this product', author:'alonso@gmail.com'}
+				{stars: 5, body: 'I love this product', author:'@gmail.com'},
+				{stars: 5, body: 'I love this product', author:'@gmail.com'}
 			]
 		},
 		{
@@ -29,8 +29,8 @@
 				{id:2, url:'img/gem-06.gif'}
 			],
 			reviews: [
-				{stars: 5, body: 'I love this product', author:'alonso@gmail.com'},
-				{stars: 5, body: 'I love this product', author:'alonso@gmail.com'}
+				{stars: 5, body: 'I love this product', author:'@gmail.com'},
+				{stars: 5, body: 'I love this product', author:'@gmail.com'}
 			]
 		},
 		{
@@ -45,8 +45,8 @@
 				{id:2, url:'img/gem-09.gif'}
 			],
 			reviews: [
-				{stars: 5, body: 'I love this product', author:'alonso@gmail.com'},
-				{stars: 5, body: 'I love this product', author:'alonso@gmail.com'}
+				{stars: 5, body: 'I love this product', author:'@gmail.com'},
+				{stars: 5, body: 'I love this product', author:'@gmail.com'}
 			]
 		}	
 	];
